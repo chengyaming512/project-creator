@@ -1,0 +1,24 @@
+<project name="project-creator" default="generate" basedir=".">
+  <description>
+    project creator based on swagger
+  </description>
+ 
+  <target name="generate" depends="hello-world"
+        description="generate the source">
+   
+  </target>
+
+  <target name="hello-world"  description="sample for create a web application">
+  	 <java jar="lib/swagger-codegen-cli.jar"
+  	           fork="true"
+  	           dir="hello-world" >
+  	         <arg value="generate"/>
+  	 	     <arg value="-c"/>
+  	         <arg value="hello-world-configuration.json"/>
+  	         <classpath>
+  	           <pathelement location="lib/swagger-codegen-cli.jar"/>
+  	         </classpath>
+  	       </java>
+  </target>
+ 
+</project>
