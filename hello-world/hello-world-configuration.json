@@ -1,0 +1,22 @@
+{
+    "verbose" : true,
+    "skipOverwrite" : false,
+    "lang" : "spring",
+    "inputSpec" : "hello-world.yaml",
+    "outputDir" : "../../ws/hello-world",
+    "library" : "spring-mvc",
+	"basePackage" : "cms.petstore",
+	"configPackage" : "cms.petstore",
+    "apiPackage" : "cms.petstore.api",
+    "modelPackage" : "cms.petstore.models",
+    "invokerPackage" : "cms.petstore.invoker",
+    "groupId" : "cms.petstore",
+    "artifactId" : "cms-api",
+    "artifactVersion" : "1.2.3",
+    "systemProperties" : {
+        "systemProp1" : "value1"
+    },
+    "instantiationTypes" : {
+        "hello" : "world"
+    } 
+}
