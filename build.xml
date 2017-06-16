@@ -1,6 +1,9 @@
 <project name="project-creator" default="generate" basedir=".">
   <description>
-    project creator based on swagger
+  	For each module, There are two files for genereate API project, one is the configuration file, it includes project name, packge defination,path and other information.
+  	The other YAML file inclueds the detail information of the API, and the following document also generated with it. 
+  	
+  	The result is a common maven object, you can import it to your eclipse or directly build and deploy it to tomcat for testing.
   </description>
  
   <target name="generate" depends="hello-world"
