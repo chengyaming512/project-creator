@@ -26,6 +26,9 @@ import java.util.stream.Stream;
  * @since 1.0
  * 
  * 
+ * The sample like following:
+ * 
+ * YAMLGenerator ./game/game.yaml E:\cmsv7\ws\iptv-content\src\com\neulion\iptv\content\game\Game.java E:\cmsv7\ws\iptv-content\src\com\neulion\iptv\content\game\GameAddInfo.java E:\cmsv7\ws\iptv-content\src\com\neulion\iptv\content\game\GameProgram.java E:\cmsv7\ws\iptv-content\src\com\neulion\iptv\content\game\GameType.java E:\cmsv7\ws\iptv-content\src\com\neulion\iptv\content\game\GameTypeID.java E:\cmsv7\ws\iptv-platform\src\com\neulion\iptv\content\game\GameProgramType.java
  */
 public class YAMLGenerator
 {
@@ -282,7 +285,7 @@ public class YAMLGenerator
             {
 
                 String line = result.next().trim();
-                if (line.length() == 0)
+                if (line.length() == 0 || !line.endsWith(";"))
                 {
                     continue;
                 }
